@@ -21,7 +21,15 @@ public:
 		double amount;
 		cout << "Enter amount to deposit\n";
 		cin >> amount;
+		
+		if(amount>=0)
 		currentBalance += amount;
+	
+		else if(amount<0){
+			cout<<"invalid amount....!!"
+				depoist();
+		}
+		
 	}
 	void withdraw() {
 		double withdraw;
@@ -71,7 +79,7 @@ int main() {
 			c1.getAccount();
 			break;
 		case 4:
-			cout << "welcom to visit Bank......\n";
+			cout << "welcome to visit our Bank......\n";
 		}
 		if (choice == 4)
 			break;
