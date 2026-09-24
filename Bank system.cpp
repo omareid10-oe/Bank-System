@@ -1,16 +1,15 @@
-
-💳  Bank System : #include <iostream>
+ #include <iostream>
 using namespace std;
 
 class account {
 	string owner;
-	int currentBalance;
+	double currentBalance;
 public:
-	account(string name, int balance) {
+	account(string name, double balance) {
 		owner = name;
 		currentBalance = balance;
 	}
-	void setAccount(string name, int balance) {
+	void setAccount(string name, double balance) {
 		owner = name;
 		currentBalance = balance;
 	};
@@ -19,13 +18,13 @@ public:
 	};
 
 	void deposit() {
-		int deposit;
+		double amount;
 		cout << "Enter amount to deposit\n";
-		cin >> deposit;
-		currentBalance += deposit;
+		cin >> amount;
+		currentBalance += amount;
 	}
 	void withdraw() {
-		int withdraw;
+		double withdraw;
 		cout << "Enter amount to withdraw\n";
 		cin >> withdraw;
 		if (withdraw > currentBalance) {
@@ -47,9 +46,9 @@ void display() {
 }
 
 int main() {
-	cout << "========== Bank System ============\n";
+	cout << "========== welcom to our Bank system ============\n";
 	string username;
-	int balance;
+	double balance;
 	cout << "Enter name and your balance\n";
 	cin >> username;
 	cin >> balance;
@@ -70,7 +69,7 @@ int main() {
 			c1.getAccount();
 			break;
 		case 4:
-			cout << "Wish you happy day\n";
+			cout << "welcom to visit Bank......\n";
 		}
 		if (choice == 4)
 			break;
