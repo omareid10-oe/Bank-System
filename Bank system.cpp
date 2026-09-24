@@ -52,11 +52,13 @@ int main() {
 	cout << "Enter name and your balance\n";
 	cin >> username;
 	cin >> balance;
-	account c1(username, balance);
-	int choice;
+	account c1;
+	c1.setAccount(username,balance);
 	c1.getAccount();
 	while (true) {
 		display();
+		int choice;
+
 		cin >> choice;
 		switch (choice) {
 		case 1:
