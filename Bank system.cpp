@@ -5,9 +5,9 @@ class account {
 	string owner;
 	double currentBalance;
 public:
-	account(string name, double balance) {
-		owner = name;
-		currentBalance = balance;
+	account() {
+		owner = "";
+		currentBalance = 0;
 	}
 	void setAccount(string name, double balance) {
 		owner = name;
